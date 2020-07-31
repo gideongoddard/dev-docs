@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheets</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/"><strong>Cheat Sheets</strong></a>
+    </header>
+    <main>
+        <nav>
+            <ul class="primary-menu">
+                <li><a href="/">Welcome</a></li>
+                <li  class="active"><a href="#">The command line</a></li>
+                <ul class="secondary-menu">
+                    <li><a href="#nav-file">Navigating the file system</a></li>
+                    <li><a href="#man-file">Manipulating the file system</a></li>
+                </ul>
+                <li><a href="#">Git</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h1>The command line</h1>
+            <p>We'll cover commands that you'll need to know for navigating and manipulating the file system. There will be many other ways that you might want to use the command line for other specific objectives but they'll be covered under more specific subject areas.</p>
+            <h2 id="nav-file">Navigating the file system</h2>
+            <h3>Print working directory</h3>
+            <code>pwd</code>
+            <p>This command is used on its own without any options. It will give you the complete path for the working directory.</p>
+            <h3>List contents of working directory</h3>
+            <code>ls</code>
+            <p>This command can be used on its own or with other options. On its own, it will list the contents of the working directory. Other options are as follows:</p>
+            <ol>
+                <li><code>ls -a</code> This lists <strong>all</strong> contents, including hidden files and folders.</li>
+                <li><code>ls -l</code> This lists the contents of the working directory in long format.</li>
+                <li><code>ls -t</code> This lists the contents of the working directory by the time they were last edited.</li>
+            </ol>
+            </p>
+            <h3>Change directory</h3>
+            <code>cd</code>
+            <p>This command is always used with the relative path that you wish to navigate to. Some examples are:</p>
+            <ul>
+                <li><code>cd child-directory</code> This assumes there is a folder within the working directory called 'child-directory'. The command will change to this directory.</li>
+                <li><code>cd ..</code> This navigates to the parent directory of the current working directory using '..' as shorthand for going up one level.</li>
+                <li><code>cd ../feet/right-foot</code> This navigates up one level and then into a 'feet' directory and then into a 'right-foot' directory.</li>
+            </ul>
+            <h3>Make directory</h3>
+            <code>mkdir</code>
+            <h3>Create new file</h3>
+            <code>touch</code>
+            <h2 id="man-file">Manipulating the file system</h2>
+        </section>
+    </main>
+</body>
+</html>
