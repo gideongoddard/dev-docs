@@ -91,7 +91,6 @@ code {
 .content {
     padding: 0 5%;
     min-height: 100vh;
-    border-left: 1px solid #fff;
 }
 
 .tiles {
@@ -146,5 +145,9 @@ code {
 
     .tiles {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .content {
+        border-left: 1px solid #fff;
     }
 }
