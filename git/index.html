@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheets</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="../"><strong>Cheat Sheets</strong></a>
+    </header>
+    <main>
+        <nav>
+            <ul class="primary-menu">
+                <li><a href="../">Welcome</a></li>
+                <li><a href="../command-line/">The command line</a></li>
+                <ul class="secondary-menu">
+                    <li><a href="../command-line/#nav-file">Navigating the file system</a></li>
+                    <li><a href="../command-line/#create">Creating files & folders</a></li>
+                    <li><a href="../command-line/#move">Moving & renaming</a></li>
+                    <li><a href="../command-line/#del">Deleting files & folders</a></li>
+                </ul>
+                <li class="active"><a href="./">Git</a></li>
+                <ul class="secondary-menu">
+                    <li><a href="#start">Getting started</a></li>
+                    <li><a href="#basics">The basics</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <section class="content">
+            <h1>Git</h1>
+            <p>We'll cover the basic git commands that you would use for version control using a local repository, then cover the commands that you'd need when working with branches and finally commands relating to working with remote repositories.</p>
+            <h2 id="start">Getting started</h2>
+            <h3>Configuring git</h3>
+            <code>git config</code>
+            <p>Git adds an <em>Author</em> attribute to every commit you make, so two aspects of configuration that are essential for it to function are:</p>
+            <ol>
+                <li><code>git config --global user.name "Your Name"</code></li>
+                <li><code>git config --global user.email "your.email@example.com"</code></li>
+            </ol>
+            <h3>Creating a local repository</h3>
+            <code>git init</code>
+            <p>This command should be used when the working directory is the project root. No options or arguments are necessary. This is used for starting a new project.</p>
+            <h3>Cloning an existing repository</h3>
+            <code>git clone</code>
+            <p>This is used when your starting point for a project is a pre-existing repository and you need to create a local copy of it. The command will be used with the location of the remote repository that you're cloning - for example:</p>
+            <code>git clone https://clientco.co/our-website.git</code>
+            <h2 id="basics">The basics</h2>
+            <h3>Checking git status</h3>
+            <code>git status</code>
+            <h3>Adding files to your staging area</h3>
+            <code>git add</code>
+            <p>This command can be used with a single file name, multiple file names, single or multiple directory names or with an an asterisk wildcard for adding everything. Here are some examples:</p>
+            <ul>
+                <li><code>git add index.html</code></li>
+                <li><code>git add index.html styles.css</code></li>
+                <li><code>git add src/</code></li>
+                <li><code>git add *</code></li>
+            </ul>
+            <h3>Committing changes</h3>
+            <code>git commit</code>
+        </section>
+    </main>
+</body>
+</html>
