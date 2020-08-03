@@ -75,6 +75,14 @@
             <p>To rename a file, the command is used with one existing file name as the first argument and the new file name as the last argument:</p>
             <code>mv matrix-2.txt matrix-reloaded.txt</code>
             <h2 id="del">Deleting files and folders</h2>
+            <code>rm</code>
+            <p>This command can be used to delete either files or folders when used with the name of the file or folder as its argument, as shown in these examples:</p>
+            <ul>
+                <li><code>rm unwanted-file.txt</code> This assumes that we are in the directory containing the file 'unwanted-file.txt' and will delete the file.</li>
+                <li><code>rm unwanted-folder</code> This assumes that we are in the directory containing the folder 'unwanted-folder' and will delete the folder <strong>BUT</strong> only if the folder is empty.</li>
+            </ul>
+            <p>If you wish to delete a folder that is not empty (i.e. contains files and/or sub-folders, you must use the '-r' option (for recursive) with the 'rm' command. Here's an example:</p>
+            <code>rm -r unwanted-folder</code>
         </section>
     </main>
 </body>
