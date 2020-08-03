@@ -188,4 +188,8 @@ code {
     .content {
         border-left: 1px solid #fff;
     }
+
+    code {
+        max-width: none;
+    }
 }
