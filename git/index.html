@@ -26,6 +26,7 @@
                 <ul class="secondary-menu">
                     <li><a href="#start">Getting started</a></li>
                     <li><a href="#basics">The basics</a></li>
+                    <li><a href="#branches">Branches</a></li>
                 </ul>
             </ul>
         </nav>
@@ -66,6 +67,20 @@
             <code>git commit</code>
             <p>The commit command should always be used with the '-m' option (for message). This is where you leave a commit message to other developers (or to your future self) to describe where in the codebase you've made changes and what those changes are. Here's an example:</p>
             <code>git commit -m "Changed styling so that code text is green."</code>
+            <h2 id="branches">Branches</h2>
+            <h3>Viewing branches</h3>
+            <code>git branch</code>
+            <p>This command outputs a list of local branches. For a list of all branches, local and remote (see more about remote branches below), you can use the following:</p>
+            <code>git branch -a</code>
+            <h3>Starting a new branch</h3>
+            <code>git branch new-homepage</code>
+            <p>Adding the name of a branch after "git branch" tells git to create a new branch with a branch name to match your input.</p>
+            <h3>Switching branches</h3>
+            <code>git checkout new-homepage</code>
+            <p>This command can be used to switch between branches by adding the name of any existing branches after "git checkout".</p>
+            <h3>Starting and switching to a new branch</h3>
+            <code>git checkout -b new-homepage</code>
+            <p>It's possible to combine the two commands above to start and new branch and switch to it in one command.</p>
             <div class="prev-next">
                 <a class="prev" href="../command-line/">
                     <p>Previous</p>
